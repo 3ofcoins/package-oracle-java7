@@ -1,0 +1,221 @@
+oracle-java7 (7.13-1) unstable; urgency=high
+
+  * SECURITY UPDATE:
+     - (CVE-2013-0437): unspecified vulnerability fixed in 7u13 (2D)
+     - (CVE-2013-1478): unspecified vulnerability fixed in 7u13 (2D)
+     - (CVE-2013-0442): unspecified vulnerability fixed in 7u13 (AWT)
+     - (CVE-2013-0445): unspecified vulnerability fixed in 7u13 (AWT)
+     - (CVE-2013-1480): unspecified vulnerability fixed in 7u13 (AWT)
+     - (CVE-2013-0441): unspecified vulnerability fixed in 7u13 (CORBA)
+     - (CVE-2013-1475): unspecified vulnerability fixed in 7u13 (CORBA)
+     - (CVE-2013-1476): unspecified vulnerability fixed in 7u13 (CORBA)
+     - (CVE-2012-1541): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0446): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2012-3342): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0450): unspecified vulnerability fixed in 7u13 (JMX)
+     - (CVE-2013-1479): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-0425): unspecified vulnerability fixed in 7u13 (Libraries)
+     - (CVE-2013-0426): unspecified vulnerability fixed in 7u13 (Libraries)
+     - (CVE-2013-0428): unspecified vulnerability fixed in 7u13 (Libraries)
+     - (CVE-2012-3213): unspecified vulnerability fixed in 7u13 (Scripting)
+     - (CVE-2013-0436): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-0439): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-0447): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-1472): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2012-4301): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-1477): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-1482): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-1483): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-1474): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2012-4305): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2012-1543): unspecified vulnerability fixed in 7u13 (JavaFX)
+     - (CVE-2013-0444): unspecified vulnerability fixed in 7u13 (Beans)
+     - (CVE-2013-0429): unspecified vulnerability fixed in 7u13 (CORBA)
+     - (CVE-2013-0419): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0423): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0351): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0430): unspecified vulnerability fixed in 7u13 (Install)
+     - (CVE-2013-0432): unspecified vulnerability fixed in 7u13 (AWT)
+     - (CVE-2013-0449): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-1473): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0435): unspecified vulnerability fixed in 7u13 (JAX-WS)
+     - (CVE-2013-0434): unspecified vulnerability fixed in 7u13 (JAXP)
+     - (CVE-2013-0409): unspecified vulnerability fixed in 7u13 (JMX)
+     - (CVE-2013-0431): unspecified vulnerability fixed in 7u13 (JMX)
+     - (CVE-2013-0427): unspecified vulnerability fixed in 7u13 (Libraries)
+     - (CVE-2013-0448): unspecified vulnerability fixed in 7u13 (Libraries)
+     - (CVE-2013-0433): unspecified vulnerability fixed in 7u13 (Networking)
+     - (CVE-2013-0424): unspecified vulnerability fixed in 7u13 (RMI)
+     - (CVE-2013-0440): unspecified vulnerability fixed in 7u13 (JSSE)
+     - (CVE-2013-0438): unspecified vulnerability fixed in 7u13 (Deployment)
+     - (CVE-2013-0443): unspecified vulnerability fixed in 7u13 (JSSE)
+     - (CVE-2013-1489): bypass of the security level setting in browser plugin
+	                (Deployment)
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Sat, 02 Feb 2013 11:23:18 +0000
+
+oracle-java7 (7.11-1) unstable; urgency=high
+
+  * SECURITY UPDATE:
+     - (CVE-2013-0422): Oracle Java 7 Security Manager Bypass Vulnerability
+                        (Libraries)
+     - (CVE-2012-3174): unspecified vulnerability leads to remote arbitrary
+                        code execution (Libraries)
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Mon, 14 Jan 2013 10:21:04 +0100
+
+oracle-java7 (7.10-1) unstable; urgency=low
+
+  * Make rules display clearly what files are missing
+  * Remove ia32 packages
+  * New upstream release
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Wed, 12 Dec 2012 11:53:36 +0100
+
+oracle-java7 (7.9-1) unstable; urgency=high
+
+  * Remove even more obsolete code
+  * Add links for machine dependent include files
+  * SECURITY UPDATE:
+     - (CVE-2012-5083): unspecified vulnerability fixed in 7u9 (2D)
+     - (CVE-2012-1531): unspecified vulnerability fixed in 7u9 (2D)
+     - (CVE-2012-5086): XMLDecoder sandbox restriction bypass (Beans)
+     - (CVE-2012-5087): PropertyElementHandler insufficient access checks
+                        (Beans)
+     - (CVE-2012-1533): unspecified vulnerability fixed in 7u9 (Deployment)
+     - (CVE-2012-1532): unspecified vulnerability fixed in 7u9 (Deployment)
+     - (CVE-2012-5076): com.sun.org.glassfish.* not restricted packages (JAX-WS)
+     - (CVE-2012-3143): unspecified vulnerability fixed in 7u9 (JMX)
+     - (CVE-2012-5088): MethodHandle insufficient access control checks
+                        (Libraries)
+     - (CVE-2012-5078): unspecified vulnerability fixed in JavaFX
+     - (CVE-2012-5089): RMIConnectionImpl insufficient access control checks
+                        (JMX)
+     - (CVE-2012-5084): DefaultFormatter insufficient data validation (Swing)
+     - (CVE-2012-5080): unspecified vulnerability fixed in JavaFX
+     - (CVE-2012-3159): unspecified vulnerability fixed in 7u9 (Deployment)
+     - (CVE-2012-5068): RhinoScriptEngine security bypass (Libraries)
+     - (CVE-2012-4416): uninitialized Array JVM memory disclosure (Hotspot)
+     - (CVE-2012-5074): com.sun.org.glassfish.* not restricted packages (JAX-WS)
+     - (CVE-2012-5071): DescriptorSupport insufficient package access checks
+                        (JMX)
+     - (CVE-2012-5069): Executors state handling issues (Concurrency)
+     - (CVE-2012-5067): unspecified vulnerability fixed in 7u9 (Deployment)
+     - (CVE-2012-5070): EnvHelp information disclosure (JMX)
+     - (CVE-2012-5075): RMIConnectionImpl information disclosure (JMX)
+     - (CVE-2012-5073): LogManager security bypass (Libraries)
+     - (CVE-2012-5079): unspecified vulnerability fixed in 7u9 (Libraries)
+     - (CVE-2012-5072): AccessController.doPrivilegedWithCombiner() information
+                        disclosure (Security)
+     - (CVE-2012-5081): JSSE denial of service (JSSE)
+     - (CVE-2012-5082): unspecified vulnerability fixed in JavaFX
+     - (CVE-2012-3216): java.io.FilePermission information leak (Libraries)
+     - (CVE-2012-5077): SecureRandom mulitple seeders information disclosure
+                        (Security)
+     - (CVE-2012-5085): disable Gopher support by default (Gopher)
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Wed, 17 Oct 2012 11:59:28 +0200
+
+oracle-java7 (7.7-1) unstable; urgency=high
+
+  * SECURITY UPDATE:
+     - (CVE-2012-4681): Oracle Java 7 Update 6, and possibly other versions,
+                        allows remote attackers to execute arbitrary code via a
+                        crafted applet, as exploited in the wild in
+                        August 2012 using Gondzz.class and Gondvv.class.
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Fri, 31 Aug 2012 12:56:02 +0200
+
+oracle-java7 (7.6-1) unstable; urgency=low
+
+  * Fix building on lenny with lib32gcc1 from lenny-backports on amd64
+  * New upstream release with JavaFX runtime
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Wed, 15 Aug 2012 21:07:18 +0000
+
+oracle-java7 (7.5-2) unstable; urgency=low
+
+  * Add lintian overrides for missing binary hardening
+  * Remove unused code from installation scripts
+  * Remove obsolete code for browser plugin
+  * Remove Java release dates from diff invocation
+  * Update copyright year
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Sun, 15 Jul 2012 23:09:37 +0200
+
+oracle-java7 (7.5-1) unstable; urgency=high
+
+  * Add JCE Unlimited Strength Jurisdiction Policy Files
+  * Set source format to "3.0 (native)"
+  * SECURITY UPDATE: multiple upstream vulnerabilities. Upstream fixes:
+     - (CVE-2012-1713): fontmanager layout lookup code memory corruption (2D)
+     - (CVE-2012-1721): unspecified vulnerability fixed in 7u5 (Deployment)
+     - (CVE-2012-1722): unspecified vulnerability fixed in 7u5 (Deployment)
+     - (CVE-2012-1723): insufficient field accessibility checks (Hotspot)
+     - (CVE-2012-1725): insufficient invokespecial <init> verification (Hotspot)
+     - (CVE-2012-1716): SynthLookAndFeel application context bypass (Swing)
+     - (CVE-2012-1711): improper protection of CORBA data models (CORBA)
+     - (CVE-2012-1726): unspecified vulnerability fixed in 7u5 (Libraries)
+     - (CVE-2012-0551): unspecified vulnerability fixed in 7u5 (Deployment)
+     - (CVE-2012-1719): mutable repository identifiers in generated stub code
+	                (CORBA)
+     - (CVE-2012-1724): XML parsing infinite loop (JAXP)
+     - (CVE-2012-1718): unspecified vulnerability fixed in 7u5 (Security)
+     - (CVE-2012-1720): unspecified vulnerability fixed in 7u5 (Networking)
+     - (CVE-2012-1717): insecure temporary file permissions (JRE)
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Tue, 12 Jun 2012 22:46:28 +0000
+
+oracle-java7 (7.4-2) unstable; urgency=low
+
+  * Fix rules on certain locales (i.e. et_EE)
+  * Remove defoma stuff
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Sat, 05 May 2012 23:11:47 +0000
+
+oracle-java7 (7.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Thu, 26 Apr 2012 22:10:48 +0000
+
+oracle-java7 (7.3-2) unstable; urgency=low
+
+  * Remove obsolete dependency information
+  * Remove obsolete Ubuntu rules
+  * Standards-Version updated to version 3.9.3
+  * Change location of Lucida fonts
+  * Remove unused rules targets and variables
+  * Bring back shlibs:Depends in plugin
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Tue, 13 Mar 2012 00:33:17 +0100
+
+oracle-java7 (7.3-1) unstable; urgency=high
+
+  * Fix lintian source package warnings
+  * Update debhelper compatibility level to 6
+  * Update java-common dependency to 0.28
+  * SECURITY UPDATE: multiple upstream vulnerabilities. Upstream fixes:
+     - (CVE-2012-0497): unspecified vulnerability fixed in 7u3 (2D)
+     - (CVE-2012-0498): unspecified vulnerability fixed in 7u3 (2D)
+     - (CVE-2012-0499): unspecified vulnerability fixed in 7u3 (2D)
+     - (CVE-2012-0500): unspecified vulnerability fixed in 7u3 (Deployment)
+     - (CVE-2012-0504): unspecified vulnerability fixed in 7u3 (Install)
+     - (CVE-2011-3571): unspecified vulnerability in the Virtual Desktop
+                        Infrastructure (Concurrency)
+     - (CVE-2012-0503): unspecified vulnerability fixed in 7u3 (I18n)
+     - (CVE-2012-0505): unspecified vulnerability fixed in 7u3 (Serialization)
+     - (CVE-2012-0502): unspecified vulnerability fixed in 7u3 (AWT)
+     - (CVE-2011-3563): unspecified vulnerability fixed in 7u3 (Sound)
+     - (CVE-2011-5035): hash table implementations vulnerable to algorithmic
+                        complexity attacks (Lightweight HTTP Server)
+     - (CVE-2012-0501): unspecified vulnerability fixed in 7u3 (JRE)
+     - (CVE-2012-0506): unspecified vulnerability fixed in 7u3 (CORBA)
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Sat, 18 Feb 2012 14:15:51 +0000
+
+oracle-java7 (7.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Janusz Dziemidowicz <rraptorr@nails.eu.org>  Fri, 13 Jan 2012 02:05:47 +0100
