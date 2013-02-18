@@ -1,0 +1,108 @@
+Source: oracle-java7
+Section: non-free/java
+Priority: optional
+Maintainer: Janusz Dziemidowicz <rraptorr@nails.eu.org>
+Homepage: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+Build-Depends: debhelper (>= 6), lsb-release, unzip, bzip2, patch, libasound2, unixodbc, libx11-6, libxext6, libxi6, libxt6, libxtst6, libxrender1
+Standards-Version: 3.9.3
+
+Package: oracle-java7-jre
+Section: non-free/java
+Architecture: all
+Provides: java-virtual-machine, java-runtime, java2-runtime, java5-runtime, java6-runtime, java7-runtime, java-runtime-headless, java2-runtime-headless, java5-runtime-headless, java6-runtime-headless, java7-runtime-headless
+Depends: java-common (>= 0.28), locales, oracle-java7-bin (>= ${source:Version}), ${misc:Depends}
+Recommends: gsfonts-x11
+Suggests: oracle-java7-plugin, oracle-java7-fonts, ttf-baekmuk | ttf-unfonts-core, ttf-kochi-gothic | ttf-sazanami-gothic, ttf-kochi-mincho | ttf-sazanami-mincho, ttf-arphic-uming,
+Replaces: oracle-java7-bin
+Description: Oracle Java(TM) Runtime Environment (JRE) 7 (architecture independent files)
+ The Oracle Java Platform Standard Edition Runtime Environment (JRE) 7
+ contains the Java virtual machine, runtime class libraries, and 
+ Java application launcher that are necessary to run programs written 
+ in the Java progamming language. It is not a development environment and
+ doesn't contain development tools such as compilers or debuggers.
+ For development tools, see the Java Development Kit JDK(TM) 7
+ (package oracle-java7-jdk).
+ .
+ This package contains architecture independent files.
+
+Package: oracle-java7-bin
+Section: non-free/java
+Architecture: amd64 i386
+Depends: oracle-java7-jre (>= ${source:Version}), ${odbc:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Recommends: ${shlibs:Recommends}
+Suggests: binfmt-support
+Description: Oracle Java(TM) Runtime Environment (JRE) 7 (architecture dependent files)
+ The Oracle Java Platform Standard Edition Runtime Environment (JRE) 7
+ contains the Java virtual machine, runtime class libraries, and 
+ Java application launcher that are necessary to run programs written 
+ in the Java progamming language. It is not a development environment and
+ doesn't contain development tools such as compilers or debuggers.
+ For development tools, see the Java Development Kit JDK(TM) 7
+ (package oracle-java7-jdk).
+ .
+ This package contains architecture dependent files.
+
+Package: oracle-java7-plugin
+Architecture: amd64 i386
+Section: non-free/web
+Priority: optional
+Depends: ${shlibs:Depends}, ${misc:Depends}, oracle-java7-bin (>= ${source:Version}), firefox | firefox-2 | iceweasel | mozilla-firefox | iceape-browser | mozilla-browser | epiphany-gecko | epiphany-webkit | epiphany-browser | galeon | midbrowser | konqueror | chromium-browser | midori | google-chrome
+Xb-Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a 
+Xb-Npp-Name: The Java(TM) Plug-in, Java SE 7
+Xb-Npp-MimeType: application/x-java-vm, application/x-java-applet, application/x-java-applet;version=1.1, application/x-java-applet;version=1.1.1, application/x-java-applet;version=1.1.2, application/x-java-applet;version=1.1.3, application/x-java-applet;version=1.2, application/x-java-applet;version=1.2.1, application/x-java-applet;version=1.2.2, application/x-java-applet;version=1.3, application/x-java-applet;version=1.3.1, application/x-java-applet;version=1.4, application/x-java-applet;version=1.4.1, application/x-java-applet;version=1.4.2, application/x-java-applet;version=1.5, application/x-java-applet;version=1.6, application/x-java-applet;version=1.7, application/x-java-applet;jpi-version=1.7.0_13, application/x-java-bean, application/x-java-bean;version=1.1, application/x-java-bean;version=1.1.1, application/x-java-bean;version=1.1.2, application/x-java-bean;version=1.1.3, application/x-java-bean;version=1.2, application/x-java-bean;version=1.2.1, application/x-java-bean;version=1.2.2, application/x-java-bean;version=1.3, application/x-java-bean;version=1.3.1, application/x-java-bean;version=1.4, application/x-java-bean;version=1.4.1, application/x-java-bean;version=1.4.2, application/x-java-bean;version=1.5, application/x-java-bean;version=1.6, application/x-java-bean;version=1.7, application/x-java-bean;jpi-version=1.7.0_13, application/x-java-vm-npruntime
+Description: Java(TM) Plug-in, Java SE 7
+ Java Plug-in enables applets written to the Java Platform 7 
+ specification to be run in Mozilla and other web browsers. 
+ Java Plug-in comes with the Java Runtime Environment (JRE).
+ .
+ This is a metapackage containing dependencies for running Java in 
+ various browsers.
+
+Package: oracle-java7-fonts
+Section: non-free/fonts
+Architecture: all
+Depends: oracle-java7-jre (>= ${source:Version}), ${misc:Depends}
+Provides: ttf-lucida
+Conflicts: ttf-lucida
+Description: Lucida TrueType fonts (from the Oracle JRE)
+ The Lucida fonts are included in the oracle-java7-jre package.
+ This package makes the fonts available to system.
+
+Package: oracle-java7-jdk
+Architecture: amd64 i386
+Depends: oracle-java7-bin (>= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}
+Suggests: default-jdk-doc, oracle-java7-source
+Provides: java-compiler, java2-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-jdk
+Description: Oracle Java(TM) Development Kit (JDK) 7
+ The JDK(TM) is a development environment for building applications, 
+ applets, and components using the Java programming language.
+ .
+ The JDK includes tools useful for developing and testing programs 
+ written in the Java programming language and running on the Java 
+ Platform.
+
+Package: oracle-java7-source
+Architecture: all
+Depends: oracle-java7-jdk (>= ${source:Version}), ${misc:Depends}
+Description: Oracle Java(TM) Development Kit (JDK) 7 source files
+ The JDK(TM) is a development environment for building applications, 
+ applets, and components using the Java programming language.
+ .
+ This package contains the Java programming language source 
+ files (src.zip) for all classes that make up the Java core API.
+
+Package: oracle-java7-javadb
+Architecture: all
+Section: non-free/java
+Depends: oracle-java7-jdk (>= ${source:Version}), ${misc:Depends}
+Enhances: oracle-java7-jdk
+Description: Java(TM) DB, Oracle's distribution of Apache Derby
+ Java DB is Oracle's supported distribution of the open source Apache 
+ Derby 100% Java technology database. It is fully transactional, secure, 
+ easy-to-use, standards-based -- SQL, JDBC API, and Java EE -- yet small, 
+ only 2MB.
+ .
+ This package adds the optional Java DB to your JDK 6 installation.
+ .
+ For more information, check out the Java DB website:
+ http://www.oracle.com/technetwork/java/javadb/overview/index.html
