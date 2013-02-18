@@ -1,0 +1,2 @@
+# -*- ruby -*-
+git 'git://github.com/rraptorr/oracle-java7.git', :branch => 'master'

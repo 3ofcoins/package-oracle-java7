@@ -1,0 +1,29 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    diff-lcs (1.2.1)
+    escape (0.0.4)
+    evoker (0.0.11)
+      rake (>= 0.9.2)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
+    mime-types (1.21)
+    mixlib-config (1.1.2)
+    posix-spawn (0.3.6)
+    rake (10.0.3)
+    thor (0.17.0)
+    vendorificator (0.1.1)
+      escape
+      grit
+      mixlib-config
+      thor (>= 0.17.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  evoker
+  rake
+  vendorificator
