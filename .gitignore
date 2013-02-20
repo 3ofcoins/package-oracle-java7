@@ -1,0 +1,6 @@
+*~
+/.vagrant
+/.bundle
+/*.zip
+/*.tar.gz
+/cache/
