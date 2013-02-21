@@ -50,4 +50,9 @@ task :deps do
   sh 'sudo', 'apt-get', '-y', 'install', *PKG_BUILD_DEPS
 end
 
+desc 'List build dependencies'
+task :show_deps do
+  puts PKG_BUILD_DEPS.join("\n")
+end
+
 task :default => [:deps, :build]
