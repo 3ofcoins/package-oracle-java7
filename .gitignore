@@ -3,5 +3,8 @@
 /.bundle
 /*.zip
 /*.tar.gz
+/*.deb
+/*.dsc
+/*.changes
 /cache/
 /build/
