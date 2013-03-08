@@ -1,3 +1,6 @@
+VERSION = '7u17'
+BUILD   = '-b02'
+
 DEBIAN = 'vendor/oracle-java7/debian'
 
 require 'rubygems'
@@ -33,10 +36,10 @@ def src(path)
     :args => '--no-cookies --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com"'
 end
 
+
 desc 'Build the packages'
-task :build => [
-    src("jdk/7u13-b20/jdk-7u13-linux-x64.tar.gz"),
-    src("jce/7/UnlimitedJCEPolicyJDK7.zip") ] do
+task :build => [ src("jdk/#{VERSION}#{BUILD}/jdk-#{VERSION}-linux-x64.tar.gz"),
+                 src("jce/7/UnlimitedJCEPolicyJDK7.zip") ] do
   rm_rf 'build'
   mkdir 'build'
   chdir 'build' do
