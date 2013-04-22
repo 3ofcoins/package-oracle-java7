@@ -1,5 +1,4 @@
-VERSION = '7u17'
-BUILD   = '-b02'
+BUILD   = '-b11'                # can't figure it out automatically
 
 DEBIAN = 'vendor/oracle-java7/debian'
 
@@ -36,6 +35,8 @@ def src(path)
     :args => '--no-cookies --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com"'
 end
 
+PKG_VERSION =~ /^(\d+)\.(\d+)-\d+$/ or raise "Can't figure out version"
+VERSION="#{$1}u#{$2}"
 
 desc 'Build the packages'
 task :build => [ src("jdk/#{VERSION}#{BUILD}/jdk-#{VERSION}-linux-x64.tar.gz"),
