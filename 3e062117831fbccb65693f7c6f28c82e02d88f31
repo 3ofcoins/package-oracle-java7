@@ -1,0 +1,15 @@
+---
+:vendorificator_version: 0.4.0
+:current_branch: master
+:current_sha: 8f56f0c937596031a9e3b18cf9e0ed1ccaff3631
+:git_describe: jdk-7u21-1-g8f56f0c
+:module_version: v7.25-1
+:module_category:
+:module_name: https://github.com/rraptorr/oracle-java7.git
+:unparsed_args:
+  :tag: v7.25-1
+:parsed_args:
+  :tag: v7.25-1
+  :version: v7.25-1
+  :repository: https://github.com/rraptorr/oracle-java7.git
+:git_revision: 63cb0b57de707b49b469262b110fe447a0f28c71
