@@ -1,31 +1,31 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    awesome_print (1.1.0)
     coderay (1.0.9)
     escape (0.0.4)
     evoker (0.0.11)
       rake (>= 0.9.2)
     method_source (0.8.1)
     minigit (0.0.3)
-    mixlib-config (1.1.2)
     polyglot (0.3.3)
-    pry (0.9.12)
+    pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    rake (10.0.3)
-    slop (3.4.3)
-    thor (0.17.0)
-    treetop (1.4.12)
+    rake (10.1.0)
+    slop (3.4.5)
+    thor (0.18.1)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
     treetop-dcf (0.2.1)
       treetop (>= 1.2.5)
-    vendorificator (0.2.0)
+    vendorificator (0.4.0)
+      awesome_print
       escape
       minigit (>= 0.0.3)
-      mixlib-config
-      thor (>= 0.17.0)
+      thor (>= 0.18.1)
 
 PLATFORMS
   ruby
